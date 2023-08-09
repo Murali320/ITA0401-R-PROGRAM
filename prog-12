@@ -1,0 +1,5 @@
+a<-c(1,2,4)
+b<-c(3,2,5)
+c<-c(5,6,2)
+matr<-cbind(a,b,c)
+matr
