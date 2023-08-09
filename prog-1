@@ -1,0 +1,5 @@
+name <- readline("Enter name: ")
+age <- readline("Enter age: ")
+cat("name:",name,"\n")
+cat("age:",age,"\n")
+cat(R.version.string)
