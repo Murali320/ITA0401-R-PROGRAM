@@ -1,0 +1,5 @@
+library(datasets)
+str(airquality)
+print(molted = melt(airquality,id.vars=c("Month","Day"),measured.vars=c("Ozone","Solar.R","Wind","Temp")))
+print(cast(molted,Month~variable,fun.aggregate=mean))
+print(cast(molted,variable~Month,fun.aggregate=mean))
