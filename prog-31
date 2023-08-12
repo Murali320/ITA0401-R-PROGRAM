@@ -1,0 +1,16 @@
+val<-c(90, 50, 70, 80, 70, 60, 20, 30, 80, 90, 20)
+print(val)
+mean_val <- mean(val)
+print(mean_val)
+median_val <- median(val)
+print(median_val)
+mode=function(){
+  return(names(sort(-table(val)))[1])
+}
+mode()
+print(val)
+print("the second highest value is: ")
+l = length(val)
+print(sort(val, partial = l-1)[l-1])
+print("the 3rd lowest value is:")
+print(sort(val)[3])
