@@ -1,0 +1,3 @@
+require(graphics)
+coplot(weight ~ Diet | Chick, data = ChickWeight,
+       type = "b", show.given = FALSE)
